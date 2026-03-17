@@ -5,7 +5,7 @@ Configure Router-on-a-Stick (ROAS) with 3 VLANs on a switch.
 DHCP will be configured on the router.  
 All VLANs must receive IP addresses and successfully ping a server in a different network.
 
-
+![topology](01. Router On A Stick Lab/ROAS-topology.png)
 ## Requirements
 - 2 × Cisco L3 IOU
 - 1 × Cisco L2 IOU
