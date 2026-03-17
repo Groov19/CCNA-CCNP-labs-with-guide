@@ -1,1 +1,39 @@
+# STP Root Bridge & Port Behavior Lab
 
+## Objective
+Understand Spanning Tree Protocol (STP) behavior by identifying root bridge selection, port roles/states, and how changes in priority and cost affect the topology.
+
+## Requirements
+- 4 × Cisco L2 IOU Switches  
+- 2 × VPC  
+
+## What You Will Do
+- Check current STP topology using CLI  
+- Identify root bridge and port roles/states  
+- Configure root bridge priorities for VLANs  
+- Modify interface cost and port priority  
+- Observe changes in root port selection  
+- Configure PortFast and BPDU Guard  
+
+## Tasks
+1. Verify current STP topology and identify root bridge and port roles  
+2. Configure:
+   - SW1 as primary root for VLAN 1 and secondary for VLAN 2  
+   - SW2 as primary root for VLAN 2 and secondary for VLAN 1  
+3. Change cost on SW4 interface and observe STP behavior  
+4. Change port priority on SW1 and observe root port selection  
+5. Configure PortFast and BPDU Guard on access interfaces  
+
+## Expected Outcome
+- Root bridge changes based on priority configuration  
+- Port roles (Root, Designated, Blocking) adjust dynamically  
+- Path selection changes when cost/priority is modified  
+- PortFast and BPDU Guard enhance edge port stability and security  
+
+## Lab Files
+- IOU images available in the Google Drive link  
+- Import images into PNETLab using the setup guide  
+- Load the `.unl` file to access the lab topology  
+
+## Note
+Refer to the objective diagram inside the `.unl` file for detailed guidance.
