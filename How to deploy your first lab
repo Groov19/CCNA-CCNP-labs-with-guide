@@ -1,0 +1,56 @@
+How to Set Up PNETLab and Import Images
+
+1. Download and install VMware Workstation or VMware Player.
+
+2. Download the PNETLab .ova file from:
+   https://pnetlab.com/pages/download
+
+3. Launch VMware and allow any required permissions.
+
+4. Go to:
+   File > Open
+
+5. Select the downloaded PNETLab .ova file.
+   Recommended VM requirements:
+   - 8 GB RAM
+   - 4 CPU cores
+   - 100 GB disk space
+
+6. Ensure virtualization is enabled in your BIOS settings,
+   otherwise the OVA will not boot.
+
+7. Once the import is complete, power on the virtual machine.
+
+8. Note the IP address displayed in the VM CLI and access it from your browser.
+
+9. Log in to the PNETLab portal using either online or offline mode.
+   (Refer to their official website for details.)
+
+10. After logging in to the web GUI, click on "Add a Lab".
+
+11. Install WinSCP and connect to your PNETLab VM using its IP address.
+
+12. Use the default credentials:
+    Username: root
+    Password: pnet
+
+13. Navigate to the directory:
+    /opt/unetlab/addons
+
+14. Based on the image type (qemu, iou, or dynamips),
+    copy and paste the entire image folder into the respective directory.
+    Do not rename the folder.
+
+15. Example:
+    A folder named "asav-984-10" should be placed inside the qemu directory.
+
+16. After copying the folder, check its permissions.
+    Ensure they are set to: rwxr-xr-x
+    (You can verify and modify permissions manually if required.)
+
+17. Refresh the PNETLab web GUI.
+    The imported image should now appear as an available node.
+
+18. Click on "Add Node", select Cisco ASA,
+    choose the required number of interfaces, and you're ready to start.
+
