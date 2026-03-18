@@ -56,7 +56,8 @@ How to Set Up PNETLab and Import Images
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 How to deploy images that are not available on my drive?
 
-1. If you want to import and deploy images that are not available on my drive, you will first need to download the required `.ova` file from the internet and convert it into `.qcow2` format. If you are able to get the `.qcow2` file directly, that is even better. A good starting point to search for the required image is: `https://drive.labhub.eu.org/`
+1. If you want to import and deploy images that are not available on my drive, you will first need to download the required `.ova` file from the internet and convert it into `.qcow2` format. 
+   If you are able to get the `.qcow2` file directly, that is even better. A good starting point to search for the required image is: `https://drive.labhub.eu.org/`
 
 2. To convert the `.ova` file, first upload or paste it into the `/opt/unetlab/temp` folder on your PNETLab VM.
 
