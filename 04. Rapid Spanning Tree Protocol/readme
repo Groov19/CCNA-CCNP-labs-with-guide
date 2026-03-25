@@ -1,1 +1,39 @@
+# RSTP Topology & Port Roles Lab
 
+## Objective
+Understand Rapid Spanning Tree Protocol (RSTP) behavior by identifying the root bridge, analyzing port roles/states, and manually configuring link types on interfaces.
+
+## Requirements
+- 4 × Cisco L2 IOU Switches  
+- 6 × VPC  
+
+## What You Will Do
+- Identify the root bridge using CLI  
+- Examine port roles and states on all switches  
+- Compare RSTP behavior with traditional STP concepts  
+- Analyze differences in root bridge selection  
+- Determine port roles on non-root switches  
+- Manually configure RSTP link types (edge, point-to-point)  
+- Verify topology convergence and behavior  
+
+## Tasks
+1. Use CLI to determine the root bridge and port roles/states on the root switch  
+2. Identify what appears different compared to standard STP and analyze why  
+3. Determine port roles/states on all remaining switches and verify using CLI  
+4. Manually configure correct RSTP link types on interfaces  
+5. Analyze expected link type for specific interfaces (e.g., access ports like SW1 F0/24)  
+
+## Expected Outcome
+- Correct identification of root bridge  
+- Proper understanding of RSTP port roles (Root, Designated, Alternate)  
+- Faster convergence behavior compared to STP  
+- Correct link type configuration (edge vs point-to-point)  
+- Stable and loop-free topology  
+
+## Lab Files
+- IOU images available in the Google Drive link  
+- Import images into PNETLab using the setup guide  
+- Load the `.unl` file to access the lab topology  
+
+## Note
+Refer to the objective diagram inside the `.unl` file for detailed guidance.
